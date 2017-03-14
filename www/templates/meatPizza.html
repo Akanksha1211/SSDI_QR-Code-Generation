@@ -1,0 +1,42 @@
+<ion-view title="Meat Pizza" id="page10">
+    <ion-content padding="true" class="has-header">
+        <h1 id="meatPizza-heading1" style="color:#DA9B40;">Supreme</h1>
+        <div id="meatPizza-markdown1" style="color:#C62525;font-size:-2px;">
+            <p>Classic marinara sauce, authentic old-world pepperoni, seasoned pork, beef, fresh mushrooms, fresh green bell pepper.</p>
+        </div>
+        <div style="text-align:center;">
+            <img src="img/hxTmLMfQIqSvXgjgXwqf_Supreme.jpg" width="100%" height="auto">
+        </div>
+        <form class="list">
+            <label class="item item-select" name="CUSTOOMIZE IT">
+                <span class="input-label">TYPE</span>
+                <select>
+                    <option>Pan Pizza</option>
+                    <option>Hand Tossed Pizza</option>
+                    <option>Thin 'N' Crispy</option>
+                    <option>Original Stuffed Crust</option>
+                    <option>Skinny It Up</option>
+                </select>
+            </label>
+            <label class="item item-select" name="SIZE">
+                <span class="input-label">SIZE</span>
+                <select>
+                    <option>LARGE</option>
+                    <option>MEDIUM</option>
+                    <option>PERSONAL PAN PIZZA</option>
+                </select>
+            </label>
+            <form class="list">
+                <ion-toggle toggle-class="toggle-positive" ng-checked="true">Extra cheese</ion-toggle>
+                <h3 id="meatPizza-heading2" style="color:#CB2A2A;">Toppings</h3>
+                <ion-checkbox>Yello onion</ion-checkbox>
+                <ion-checkbox>Sun dried tomato</ion-checkbox>
+                <ion-checkbox>Pineapple</ion-checkbox>
+                <ion-checkbox>Mushroom</ion-checkbox>
+                <ion-checkbox>Bell Pepper</ion-checkbox>
+                <ion-checkbox>Spinach</ion-checkbox>
+            </form>
+            <a ui-sref="tabsController.cartTabDefaultPage" id="meatPizza-button39" class="button button-assertive  button-block icon ion-android-cart">ADD TO CART</a>
+        </form>
+    </ion-content>
+</ion-view>

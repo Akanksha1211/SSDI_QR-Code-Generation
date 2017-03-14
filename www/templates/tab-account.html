@@ -1,0 +1,64 @@
+<ion-header-bar align-title="center" class="bar-balanced-abn">
+ <h1 class="title">User Details</h1>
+ <button  ng-click="logout()" >Logout</button>
+</ion-header-bar>
+
+<ion-view >
+  <ion-content>
+    <ion-scroll zooming="true" direction="y" class="scroll" >
+
+    <!-- for username -->
+
+
+
+  <label class="item item-input">
+    <input type="text" placeholder="Username" ng-model="input.userId">
+  </label>
+
+<div class="row">
+<div class="col-50">
+<label class="item item-input">
+    <input type="text" placeholder="First Name" ng-model="input.firstName">
+  </label>
+  </div>
+
+  <div class="col-50">
+  <label class="item item-input">
+    <input type="text" placeholder="Last Name" ng-model="input.lastName">
+  </label>
+  </div>
+
+  </div>
+  <label class="item item-input">
+    <input type="text" placeholder="Email" ng-model="input.emailId">
+  </label>
+
+
+  <label class="item item-input">
+    <input type="text" placeholder="Account No." ng-model="input.accountNumber">
+  </label>
+
+<label class="item item-input">
+    <input type="number" placeholder="Pin" ng-model="input.userPin">
+  </label>
+
+
+<label class="item item-input">
+    <input type="text" placeholder="Mobile No." ng-model="input.mobileNumber">
+  </label>
+
+
+
+<div style="height:3%;"></div>
+    <div>
+      <!--<button class="button icon-right ion-chevron-right button-energized abn" ng-click="add();">
+	  <a ui-sref="account" id="menu2-button31" class="button button-assertive  button-block">SAVE</a>
+          
+    </button>-->
+	<a ui-sref="page1_cust" id="menu2-button31" class="button button-assertive  button-block">SAVE</a>
+    </div>
+
+
+    </ion-scroll>
+  </ion-content>
+</ion-view> 

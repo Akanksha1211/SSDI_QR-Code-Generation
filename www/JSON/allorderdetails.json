@@ -1,0 +1,23 @@
+{
+"data": [{
+		"itemList": {
+			"userid": "1234",
+			"password": "1234",
+			"userid" :"1234",
+			"firstname": 1410771799617,
+			"lastname": "CH0101",
+			"userType": "MERCHANT",
+			"card-details": 1410771799617
+		}
+	}, {
+		"user": {
+			"username": "Open",
+			"password": "BH0437",
+			"firstname": 1410771799617,
+			"userid" :"12345",
+			"lastname": "CH0101",
+			"userType": "CUSTOMER",
+			"card-details": 1410771799617
+		}
+	}]
+}

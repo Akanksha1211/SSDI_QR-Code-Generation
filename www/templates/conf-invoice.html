@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<ion-header-bar align-title="center" class="bar-balanced-abn">
+ <button class="button button-icon icon ion-navicon" ng-click="toggleLeft()"></button>
+ <h1 class="title">Merchant</h1>
+ <div class="buttons ">
+    <button class="button bar-balanced-abn"  ng-click="logout()">Logout</button>
+  </div>
+</ion-header-bar>
+
+<ion-view>
+
+<ion-content >
+<!--invoice  code-->
+
+
+    <div class="app">    
+               <div data-role="page" id="QrCode">      
+                  <div data-role="header" data-position="fixed">      
+                    <h1>Confirm QrCode</h1>      
+                  </div>      
+                  <div role="main" class="ui-content" id="home-content">      
+                      <input id="text" type="text" style="width:80%" /><br />    
+                      <input type="button" value="Confirm QR Code" style="width:80%" ng-click="Confirm();"/><br />    
+                  <div id="qrcode"></div>    
+                 </div>      
+               </div>      
+            </div>   
+  
+
+<!--ends invoice code-->
+    
+    </div>
+    </div>
+
+  </ion-content>
+</ion-view>

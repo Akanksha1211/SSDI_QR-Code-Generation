@@ -1,0 +1,29 @@
+<ion-header-bar align-title="center" class="bar-balanced-abn">
+ <div class="buttons ">
+    
+	<h1 class="title">Pizza APP</h1> 
+	<button  ng-click="logout()" >Logout</button>
+  </div>
+</ion-header-bar>
+
+<ion-view>
+  <ion-content class="padding" >
+<label class="item item-input">
+  <span class="input-label">TOTAL</span>{{value}}$
+  </label>
+    <div class="app">    
+               <div data-role="page" id="QrCode">      
+                  <div data-role="header" data-position="fixed">      
+                   
+				   
+                  </div>      
+                  <div role="main" class="ui-content" id="home-content">      
+                      <input id="text" type="text" style="width:80%" /><br />    
+					  <button id="menu2-button33" class="button button-assertive  button-block" ng-click="Generate();">Generate QR Code</button>
+                  <div id="qrcode"></div>    
+                 </div>      
+               </div>      
+            </div>
+
+  </ion-content>
+</ion-view>

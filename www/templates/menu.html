@@ -1,0 +1,47 @@
+<ion-side-menus>
+
+  <ion-nav-bar align-title="left" class="bar-stable nav-title-android">
+    <ion-nav-back-button class="button-icon icon ion-ios7-arrow-back">
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-pane drawer-menu-content>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <drawer side="left" canDrag="true">
+    <ion-content class="header-menu">
+      <ion-list>
+        <ion-item nav-clear menu-and-drawer-close ng-click="clickHome()" class="clickable item-icon-left" ng-class="{'current': isItemActive('home')}">
+          <i class="icon ion-home"></i> {{'HOME_MENU' | translate}}
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close href="#/app/progress" class="clickable item-icon-left" ng-class="{'current': isItemActive('prog')}">
+          <i class="icon ion-arrow-graph-up-right"></i> {{'PROGRESS_MENU' | translate}}
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close href="#/app/settings" class="clickable item-icon-left" ng-class="{'current': isItemActive('sett')}">
+          <i class="icon ion-gear-b"></i> {{'SETTINGS_MENU' | translate}}
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close href="#/app/exercises" class="clickable item-icon-left" ng-class="{'current': isItemActive('exer')}">
+          <i class="icon ion-clipboard"></i> {{'EXERCISE_MENU' | translate}}
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close href="#/app/rewards" class="clickable item-icon-left" ng-class="{'current': isItemActive('rewa')}">
+          <i class="icon ion-ios7-star"></i> {{'REWARDS_MENU' | translate}} <span class="badge badge-assertive menu-badge" ng-show="mPointsTotal > 0 && showPointsBadge && sessionMAvailable" style="margin-right:40px">{{mPointsTotal}}</span>
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close href="#/app/reminders" class="clickable item-icon-left" ng-class="{'current': isItemActive('remi')}">
+          <i class="icon ion-android-reminder"></i> {{'REMIND_MENU' | translate}}
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close class="clickable item-icon-left" ng-click="launchStore()">
+          <i class="icon ion-bag"></i> {{'GET_GEAR' | translate}}
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close href="#/app/help" class="clickable item-icon-left" ng-class="{'current': isItemActive('help')}">
+          <i class="icon ion-help-circled"></i> {{'HELP_MENU' | translate}}
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close href="#/app/sworkitpro" class="clickable item-icon-left pro-menu-option" ng-class="{'current': isItemActive('swor')}">
+          <img src="img/sworkitpro-small.png"/> <span>{{'GET_PRO' | translate}}</span>
+        </ion-item>
+        <ion-item nav-clear menu-and-drawer-close ng-click="downloadNexerciseMenu()" class="nexercise-menu">
+          {{'BY' | translate}} <img src="img/nexercise-banner.png"/> 
+          <ul><li></li><li></li><li></li></ul>
+        </ion-item>
+      </ion-list>
+    </drawer>
+</ion-side-menus>

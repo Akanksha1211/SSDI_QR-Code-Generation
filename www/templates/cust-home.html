@@ -1,0 +1,55 @@
+<ion-header-bar align-title="center" class="bar-balanced-abn">
+ <h1 class="title">Pizza App</h1>
+ <button  ng-click="logout()" >Logout</button>
+</ion-header-bar>
+
+<ion-view title="Meat Pizza" id="page10">
+
+    <ion-content padding="true" class="has-header">
+        <h1 id="meatPizza-heading1" style="color:#DA9B40;">Order Pizza</h1>
+        <div style="text-align:center;">
+            <img src="img/hxTmLMfQIqSvXgjgXwqf_Supreme.jpg" width="100%" height="auto">
+        </div>
+        <form class="list">
+
+            <label class="item item-select" name="CUSTOOMIZE IT">
+                <span class="input-label">TYPE</span>
+                <select>
+                    <option>Pan Pizza</option>
+                    <option>Hand Tossed Pizza</option>
+                    <option>Thin 'N' Crispy</option>
+                    <option>Original Stuffed Crust</option>
+                    <option>Skinny It Up</option>
+                </select>
+            </label>
+            <label class="item item-select" name="SIZE">
+                <span class="input-label">SIZE</span>
+                <select>
+                    <option>LARGE</option>
+                    <option>MEDIUM</option>
+                    <option>PERSONAL PAN PIZZA</option>
+                </select>
+            </label>
+            <form class="list">
+                <ion-toggle toggle-class="toggle-positive" ng-checked="true">Extra cheese</ion-toggle>
+                <h3 id="meatPizza-heading2" style="color:#CB2A2A;">Toppings</h3>
+				
+				<div class="check-box-panel">
+		<div ng-repeat="item in devList">
+			<div class="action-checkbox">
+				<ion-checkbox id="{{item.text}}" type="checkbox" value="{{item.text}}" ng-checked="selection.indexOf(item.text) > -1" ng-click="toggleSelection(item.text, item.amount)" />
+				<label for="{{item.text}}"></label>
+				{{item.text}}</ion-checkbox>
+			</div>
+			
+		</div>
+	</div>
+	
+            </form>
+            <a ui-sref="tabsController.cartTabDefaultPage" id="meatPizza-button39" class="button button-assertive  button-block icon ion-android-cart" ng-click="order()">Total</a>
+			 
+         
+      </button>
+        </form>
+    </ion-content>
+</ion-view>
